@@ -1,4 +1,215 @@
+html{
+    font-family: arial, sans-serif;
+    background-color: black;
+    color: white
+}
+
+body {
+    width: 1310px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 40px;
+    color: #007d7b;
+    margin-left: 20px;
+}
+
+nav { 
+    align-items: center;
+    align-self: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 20px;
+}
+
+nav li {
+    display: inline-flex;
+    margin-right: 20px;
+    margin-left: 75px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover, a:focus{
+    color: #007d7b;
+}
+
+[href="#top"] {
+    background-color: #007d7b;
+    position: fixed;
+    width: 85px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+[href="#top"]:hover, [href="#top"]:focus {
+    background-color: #FFFFFF;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* About Section */
+
+#about, #gallery {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+#about, #about > * {
+    padding: 6.25px
+}
+
+#about h2, #about p {
+    text-align: right;
+}
+
+#about img {
+    width: 850px;
+}
+
+
+p {
+    text-transform: none;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Gallery Section */
+
+#gallery > h2, #gallery > p {
+    margin-left: 20px;
+}
+
 #grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    color: white;
+    padding: 0 6.25px;
 }
+.grid-item {
+    position: relative;
+    margin: 6.25px
+}
+
+.grid-item > img {
+    width: 420px;
+    max-height: 630px;
+}
+
+.grid-item > p {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.dark {
+    color: black;
+}
+
+.top-left {
+    top: 5px;
+    left: 5px;
+}
+
+.bottom-left {
+    bottom: 16px;
+    left: 5px;
+}
+
+.bottom-right {
+    bottom: 16px;
+    right: 32px;
+}
+
+/* Contact */
+#contact{
+    width: 850px;
+    margin: 16px auto;
+    text-align: center;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+form > * {
+    font-size: 16px;
+}
+
+input {
+    text-transform: uppercase;
+}
+
+/* Input Boxes */
+input {
+    margin: 8px 0;
+}
+
+[type="text"], [type="email"]{
+    color: #007d7b;
+    font-weight: bold;
+    height: 2em;
+}
+
+/* Submit Button */
+[type="submit"]{
+    color: #FFFFFF;
+    width: 425px;
+    height: 55px;
+    margin: 10px auto;
+    background-color:#007d7b;   
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+[type="submit"]:hover, [type="submit"]:focus {
+    color:#007d7b;
+    background-color: #FFFFFF;
+}
+
+footer p{
+    padding: 20px;
+    text-transform: uppercase;   
+    text-align: center;
+}
+

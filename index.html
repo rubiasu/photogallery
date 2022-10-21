@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,86 +12,90 @@
         <h1>TK Photography</h1>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Contact</li>
-                <li>^ top</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">^<br>top</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about">
-            <h2>About</h2>
             <img src="img/TK.png" alt="Silohuette of a photographer with tripod during golden hour.">
-            <p>Hello!</p>
-            <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. </p>
+            <div>
+                <h2>About</h2>
+                <p>Hello!<br>I’m TK and I’m a photographer.<br>I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. </p>
+            </div>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
-            <p>Here are some highlights of my work.</p>
-            <p>The locations and year are in the caption.</p>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
             <div id="grid-container">
                 <div class="grid-item">
                     <img src="img/Chile.png" alt="Image of beach at sunset in Chile.">
-                    <p>Chile, 2001</p>
+                    <p class="top-left dark">Chile, 2001</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Guatemala.png" alt="">
-                    <p>Guatemala, 1997</p>
+                    <img src="img/Guatemala.png" alt="Image of flowers with a path to a Guatemalan lake dock at sunrise.">
+                    <p class="top-left">Guatemala, 1997</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Hawaii.png" alt="">
-                    <p>Hawaii, 2010</p>
+                    <img src="img/Hawaii.png" alt="Arial view of Hawaii beachside mountains.">
+                    <p class="bottom-right">Hawaii, 2010</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Iran.png" alt="">
-                    <p>Iran, 1999</p>
+                    <img src="img/Iran.png" alt="Photo of mountains in Iran at sunset.">
+                    <p class="dark top-left">Iran, 1999</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Ireland.png" alt="">
-                    <p>Ireland, 2012</p>
+                    <img src="img/Ireland.png" alt="Photo of grassy coast in Ireland.">
+                    <p class="bottom-right">Ireland, 2012</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Italy.png" alt="">
-                    <p>Italy, 2015</p>
+                    <img src="img/Italy.png" alt="Photo of mountain and lake in Italy.">
+                    <p class="bottom-left">Italy, 2015</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Moab-Desert.png" alt="">
-                    <p>Moab Desert, 2020</p>
+                    <img src="img/Moab-Desert.png" alt="Photo of red rocks from Moab Desert.">
+                    <p class="bottom-right">Moab Desert, 2020</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Rocky-Mountains.png" alt="">
-                    <p>Rocky Mountains, 2009</p>
+                    <img src="img/Rocky-Mountains.png" alt="Photo of waves crashing against mountainous rocks.">
+                    <p class="dark top-left">Rocky Mountains, 2009</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Switzerland.png" alt="">
-                    <p>Switzerland, 2014</p>
+                    <img src="img/Switzerland.png" alt="Photo of snowy mountains in Switzerland.">
+                    <p class="dark bottom-left">Switzerland, 2014</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/UK.png" alt="">
-                    <p>UK, 2005</p>
+                    <img src="img/UK.png" alt="Image of grassy hills in the United Kingdom.">
+                    <p class="bottom-right">UK, 2005</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/USA.png" alt="">
-                    <p>USA, 2021</p>
+                    <img src="img/USA.png" alt="Photo of a flower field in front of a forest.">
+                    <p class="top-left">USA, 2021</p>
                 </div>
                 <div class="grid-item">
-                    <img src="img/Wyoming.png" alt="">
-                    <p>Wyoming, 2021</p>
+                    <img src="img/Wyoming.png" alt="Photo of a lake in front of a forest with mountains in the background.">
+                    <p class="top-left">Wyoming, 2021</p>
                 </div>                
             </div>
         </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I’ll connect with you soon.</p>
+            <form action="#" method="get">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your full name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <label for="name">Message</label>
+                <input type="text" name="message" id="message" placeholder="What can I help you with?">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
     </main>        
     <footer>
-        <h2>Contact</h2>
-        <p>Please fill out this form and I’ll connect with you soon.</p>
-    
-        Your contact information
-        Name (Your full name)
-        Email (Enter your email address)
-        Message (What can I help you with?)
-        Submit
-    
         <p>Copyright 2021 TK Photography</p>
     </footer>
 
