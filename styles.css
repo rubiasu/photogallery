@@ -10,21 +10,25 @@ body {
     text-transform: uppercase;
 }
 
+/* Header */
+
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 1310px;
+    height: 90px;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 40px;
     color: #007d7b;
-    margin-left: 20px;
+    float: left;
 }
 
+/* Nav */
 nav { 
-    align-items: center;
-    align-self: center;
+    position: relative;
+    float: right;
+    top: 20px;
 }
 
 ul {
@@ -36,9 +40,13 @@ li {
 }
 
 nav li {
-    display: inline-flex;
-    margin-right: 20px;
-    margin-left: 75px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 32px;
+}
+
+nav :last-child {
+    margin-left: 0;
 }
 
 a {
@@ -55,8 +63,8 @@ a:hover, a:focus{
     background-color: #007d7b;
     position: fixed;
     width: 85px;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     z-index: 100;
 }
 
@@ -64,14 +72,57 @@ a:hover, a:focus{
     background-color: #FFFFFF;
 }
 
+[href="top"]:focus {
+    border: 2px solid #007d7b;
+}
+
+/* Common */
+
 h2 {
     font-size: 40px;
     margin: 0;
 }
 
 section {
+    max-width: 1310px;
     margin: 0;
     padding: 0;
+}
+
+p {
+    text-transform: none;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Table */
+
+table * {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    padding: 0 5px;
+}
+
+th {
+    text-align: left;
+    text-transform: none;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+
+tbody *{
+    color: white;
+}
+
+td {
+    position: relative;
+    padding: 5px;
+    margin: 0;
 }
 
 /* About Section */
@@ -81,54 +132,51 @@ section {
     color: black;
 }
 
-#about {
-    display: flex;
-    align-items: flex-start;
-    /* flex-wrap: wrap; */
-}
-
-#about, #about > * {
-    padding: 6.25px
-}
-
-#about h2, #about p {
+#about * {
+    color: black;
     text-align: right;
 }
 
 #about img {
     width: 850px;
+    height: 186px;
 }
 
+#about tr :nth-child(2) {
+    position: relative;
+}
 
-p {
-    text-transform: none;
-    font-size: 20px;
-    margin: 0;
+#about h2 {
+    padding-right: 16px;
+}
+
+#about p {
+    padding-top: 20px;
+    padding-right: 16px;
 }
 
 /* Gallery Section */
 
-#gallery > h2, #gallery > p {
+#gallery h2 {
     margin-left: 20px;
 }
 
-#grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    color: white;
-    padding: 0 6.25px;
-}
-.grid-item {
-    position: relative;
-    margin: 6.25px
+th{
+    color: black;
 }
 
-.grid-item > img {
+td img {
     width: 420px;
-    max-height: 630px;
+    height: 281px;
+    margin: 0;
+    padding: 0;
 }
 
-.grid-item > p {
+.tall img{
+    height: 630px;
+}
+
+#gallery td p {
     display: block;
     position: absolute;
     z-index: 100;
@@ -141,17 +189,17 @@ p {
 }
 
 .top-left {
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
 }
 
 .bottom-left {
-    bottom: 16px;
-    left: 5px;
+    bottom: 20px;
+    left: 10px;
 }
 
 .bottom-right {
-    bottom: 16px;
+    bottom: 20px;
     right: 32px;
 }
 
@@ -160,6 +208,10 @@ p {
     width: 850px;
     margin: 16px auto;
     text-align: center;
+}
+
+#contact p {
+    font-weight: bold;
 }
 
 /* Form */
@@ -171,7 +223,7 @@ form {
     margin-bottom: 16px;
 }
 
-form > * {
+form label, form input {
     font-size: 16px;
 }
 
@@ -202,14 +254,19 @@ input {
     font-weight: bold;
 }
 
-[type="submit"]:hover, [type="submit"]:focus {
+[type="submit"]:hover {
     color:#007d7b;
     background-color: #FFFFFF;
 }
+
+[type="submit"]:focus {
+    border: 2px solid #007d7b;
+}
+
+/* Footer */
 
 footer p{
     padding: 20px;
     text-transform: uppercase;   
     text-align: center;
 }
-
